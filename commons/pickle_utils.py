@@ -9,7 +9,7 @@ def save_zipped_pickle(obj, filename, protocol=-1):
 
 
 def load_zipped_pickle(filename):
-    #print('loading cached data from = {0}'.format(filename))
+    print('loading cached data from = {0}'.format(filename))
     with gzip.open(filename, 'rb') as f:
         loaded_object = p.load(f)
         return loaded_object
